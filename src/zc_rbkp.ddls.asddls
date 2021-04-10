@@ -144,11 +144,13 @@ define root view entity ZC_RBKP
       @Search.defaultSearchElement: true
       @Search.fuzzinessThreshold: 0.9
       @EndUserText.quickInfo: 'Invoice status'
+      @ObjectModel.text.element: ['InvStat']
       rbstat as InvStatus,
 
       @UI: {lineItem: [{position: 170, importance: #HIGH, label: 'Invoice status'  }],
             fieldGroup: [{qualifier: 'GeneralData1',position: 170,importance: #HIGH, label: 'Invoice status' }],
             identification: [ { position: 200, label: 'Invoice status' } ] }
       @EndUserText.quickInfo: 'Invoice status'
+      @UI.hidden: true
       docst  as InvStat
 }
