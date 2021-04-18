@@ -2,7 +2,8 @@
 @AccessControl.authorizationCheck: #CHECK
 
 @UI.headerInfo: { typeName: 'Invoice Header',
-                  typeNamePlural: 'Invoice Header list' }
+                  typeNamePlural: 'Invoice Header list' ,
+                  title: { type: #STANDARD , value:  'Belnr'   } }
 
 @Search.searchable: true
 

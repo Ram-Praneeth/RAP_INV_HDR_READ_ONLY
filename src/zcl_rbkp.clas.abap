@@ -30,6 +30,8 @@ CLASS zcl_rbkp IMPLEMENTATION.
              CASE rbstat
              WHEN 'A' THEN 'Parked'
              WHEN '5' THEN 'Posted'
+             WHEN '2' THEN 'Deleted'
+             WHEN 'B' THEN 'Parked and completed'
              ELSE ''
              END as docst
              FROM :itab;
